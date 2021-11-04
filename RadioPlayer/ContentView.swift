@@ -12,7 +12,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                //ProgressView()
                 RadioListView()
                 InfoPanelView()
             }.navigationBarTitle("Radio Player")
