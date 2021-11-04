@@ -45,9 +45,9 @@ public class RadioFetcher: ObservableObject {
     }
     
     func load() {
-        let url = URL(string: "https://mocki.io/v1/1843f910-4b42-4503-bc6c-a289a98469bd")!
+        let url = URL(string: "https://mocki.io/v1/bac7da7a-8d77-413d-a3cf-abeb53c411fc")
         
-        URLSession.shared.dataTask(with: url) {(data,response,error) in
+        URLSession.shared.dataTask(with: url!) {(data,response,error) in
             do {
                 if let d = data {
                     let decodedLists = try JSONDecoder().decode([RadioModel].self, from: d)
