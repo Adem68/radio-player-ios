@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,14 @@
 		6CAD32D8271C3F4D00BD74D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD32D7271C3F4D00BD74D3 /* ContentView.swift */; };
 		6CAD32DA271C3F4F00BD74D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD32D9271C3F4F00BD74D3 /* Assets.xcassets */; };
 		6CAD32DD271C3F4F00BD74D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD32DC271C3F4F00BD74D3 /* Preview Assets.xcassets */; };
+		6CAD32EE271C48FE00BD74D3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6CAD32ED271C48FE00BD74D3 /* Kingfisher */; };
+		6CAD32F2271C4FD200BD74D3 /* RadioListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD32F1271C4FD200BD74D3 /* RadioListView.swift */; };
+		6CAD32F5271C506C00BD74D3 /* RadioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD32F4271C506C00BD74D3 /* RadioModel.swift */; };
+		6CAD32F7271C520400BD74D3 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD32F6271C520400BD74D3 /* InfoPanelView.swift */; };
+		6CAD32F9271C521D00BD74D3 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD32F8271C521D00BD74D3 /* VisualEffectView.swift */; };
+		6CAD32FB271C524200BD74D3 /* NowPlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD32FA271C524200BD74D3 /* NowPlayingView.swift */; };
+		6CAD32FF271C603700BD74D3 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD32FE271C603700BD74D3 /* RadioPlayer.swift */; };
+		6CB0CF34271CC7800006328D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB0CF33271CC7800006328D /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,13 @@
 		6CAD32D9271C3F4F00BD74D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CAD32DC271C3F4F00BD74D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6CAD32DE271C3F4F00BD74D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CAD32F1271C4FD200BD74D3 /* RadioListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioListView.swift; sourceTree = "<group>"; };
+		6CAD32F4271C506C00BD74D3 /* RadioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioModel.swift; sourceTree = "<group>"; };
+		6CAD32F6271C520400BD74D3 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		6CAD32F8271C521D00BD74D3 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		6CAD32FA271C524200BD74D3 /* NowPlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingView.swift; sourceTree = "<group>"; };
+		6CAD32FE271C603700BD74D3 /* RadioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
+		6CB0CF33271CC7800006328D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CAD32EE271C48FE00BD74D3 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +54,7 @@
 			children = (
 				6CAD32D4271C3F4D00BD74D3 /* RadioPlayer */,
 				6CAD32D3271C3F4D00BD74D3 /* Products */,
+				6CAD32EA271C48E800BD74D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,11 +69,15 @@
 		6CAD32D4271C3F4D00BD74D3 /* RadioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				6CAD32F3271C506000BD74D3 /* Model */,
+				6CAD32F0271C4FC200BD74D3 /* View */,
 				6CAD32D5271C3F4D00BD74D3 /* RadioPlayerApp.swift */,
 				6CAD32D7271C3F4D00BD74D3 /* ContentView.swift */,
 				6CAD32D9271C3F4F00BD74D3 /* Assets.xcassets */,
 				6CAD32DE271C3F4F00BD74D3 /* Info.plist */,
 				6CAD32DB271C3F4F00BD74D3 /* Preview Content */,
+				6CAD32FE271C603700BD74D3 /* RadioPlayer.swift */,
+				6CB0CF33271CC7800006328D /* AppDelegate.swift */,
 			);
 			path = RadioPlayer;
 			sourceTree = "<group>";
@@ -67,6 +88,32 @@
 				6CAD32DC271C3F4F00BD74D3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6CAD32EA271C48E800BD74D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CAD32F0271C4FC200BD74D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CAD32F1271C4FD200BD74D3 /* RadioListView.swift */,
+				6CAD32F6271C520400BD74D3 /* InfoPanelView.swift */,
+				6CAD32F8271C521D00BD74D3 /* VisualEffectView.swift */,
+				6CAD32FA271C524200BD74D3 /* NowPlayingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6CAD32F3271C506000BD74D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CAD32F4271C506C00BD74D3 /* RadioModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +132,9 @@
 			dependencies = (
 			);
 			name = RadioPlayer;
+			packageProductDependencies = (
+				6CAD32ED271C48FE00BD74D3 /* Kingfisher */,
+			);
 			productName = RadioPlayer;
 			productReference = 6CAD32D2271C3F4D00BD74D3 /* RadioPlayer.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +162,9 @@
 				Base,
 			);
 			mainGroup = 6CAD32C9271C3F4D00BD74D3;
+			packageReferences = (
+				6CAD32E7271C487400BD74D3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 6CAD32D3271C3F4D00BD74D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CAD32D8271C3F4D00BD74D3 /* ContentView.swift in Sources */,
+				6CAD32F5271C506C00BD74D3 /* RadioModel.swift in Sources */,
 				6CAD32D6271C3F4D00BD74D3 /* RadioPlayerApp.swift in Sources */,
+				6CB0CF34271CC7800006328D /* AppDelegate.swift in Sources */,
+				6CAD32F2271C4FD200BD74D3 /* RadioListView.swift in Sources */,
+				6CAD32F7271C520400BD74D3 /* InfoPanelView.swift in Sources */,
+				6CAD32FF271C603700BD74D3 /* RadioPlayer.swift in Sources */,
+				6CAD32FB271C524200BD74D3 /* NowPlayingView.swift in Sources */,
+				6CAD32F9271C521D00BD74D3 /* VisualEffectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +329,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"RadioPlayer/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RadioPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -290,6 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"RadioPlayer/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RadioPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -326,6 +388,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6CAD32E7271C487400BD74D3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6CAD32ED271C48FE00BD74D3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CAD32E7271C487400BD74D3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6CAD32CA271C3F4D00BD74D3 /* Project object */;
 }
